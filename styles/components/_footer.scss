@@ -1,0 +1,15 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+footer{
+    display: flex;
+    align-items: center;
+    background: variaveis.$cor-default;
+    margin-top: 5rem;
+    small {
+        margin: 1.5rem auto;
+        @include mixins.ft-fs-cl(variaveis.$ft-textos, 15px, variaveis.$cor-primaria);
+        line-height: 22.5px;
+        font-weight: 400;
+    }
+}
